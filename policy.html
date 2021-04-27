@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>政策-守艺人</title>
+		<link rel="stylesheet" type="text/css" href="css/topmaue.css" />
+		<link rel="stylesheet" type="text/css" href="css/polity.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+	</head>
+	<body>
+		<div class="nva">
+			<div class="topmenu">
+				<div class="biaoti" style="margin-left: 80px;">
+				<p> 守艺人-守护非物质文化遗产</p>
+			    </div>
+			</div>
+			<hr align="center" width="100%" color="#e6e6e6"/>
+			<div id="navigation">
+				<a href="index.html">首页</a>
+				<a href="video.html">视频</a>
+				<a href="policy.html" style="text-decoration: underline;">政策</a>
+				<a href="jqueryBootstrapMoban/index.html">商城</a>
+				<a href="">关于我们</a>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+		
+		<div id="heard">
+			<a href="index.html">首页</a> > <a>政策</a>
+		</div>
+		<div id="center">
+			<div class="top">
+				<div class="topbt">
+					 <p>政策</p>
+				</div>
+				<div class="topan">
+					 <input type='button' value="国内法律法规文件" onclick="lick(1)"></button>
+					 <input type='button' value="联合国教科文组织文件" onclick="lick(2)"></button>
+					 <input type="button" value="重要讲话" onclick="lick(3)"></button>
+				</div>
+				<hr align="center" style="margin-top: 10px;" size="1" width="99%" color="#b4b4b4"/>
+			</div>
+			<div class="midder">
+				<div id="middermain">
+					
+				</div>
+			</div>
+			<div id="under" align="center">
+
+			</div>
+		</div>
+		
+		<div id="buttom" style="text-align: center; vertical-align: middle;">
+			<hr align="center" style="margin-top: 10px;" size="1" width="99%" color="#b4b4b4"/>
+			<br>
+			<br>
+			<br>
+			<label style="color: steelblue; font-size: 8px;">
+				关于我们&nbsp;|&nbsp;关于我们&nbsp;|&nbsp;联系我们&nbsp;|&nbsp;版权与免责声明&nbsp;</p>
+			<br>
+			<label style="color: steelblue; font-size: 8px;">组织：南华大学18级软件工程软件管理小组&nbsp;&nbsp;&nbsp;主办：软件工程卓越01班</p>
+			<br>
+			<label style="color: steelblue; font-size: 8px;">再见</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function lick(obj){
+		var pics=document.getElementById("middermain");
+		var cd=document.getElementById("under");
+		var zhi = document.getElementsByTagName("INPUT");
+		for(var i=0;i<zhi.length;i++){
+		zhi[i].style.background="";
+		zhi[i].style.color='';
+		}
+		document.getElementsByTagName("INPUT")[obj-1].style.background="#6e8dae";
+		document.getElementsByTagName("INPUT")[obj-1].style.color="white";
+		pics.innerHTML="<img class='animated fadeIn' src='img/file/"+obj+".png'>";
+		cd.innerHTML="<img src='img/file/4.png'>";
+		}
+		
+	</script>
+</html>

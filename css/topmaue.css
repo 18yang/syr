@@ -1,0 +1,43 @@
+body{
+	background-color: #eaeaea;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.nva{
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index:999;
+}
+.topmenu{
+	
+}
+.biaoti{
+	float: left;
+	width: 100%;
+	font-size: 35px;
+	font-family: 隶书;
+	-webkit-text-stroke: 1px #5A738F;
+	background-image:-webkit-linear-gradient(bottom,#ffffff,#5A738F); 
+	-webkit-background-clip:text; 
+	-webkit-text-fill-color:transparent; 
+}
+#navigation{
+	font-family: 隶书;
+	text-align: center;
+	line-height: 25px;
+	font-size: 22px;
+	padding-bottom: 4px;
+}
+#navigation a{
+	margin-left:110px;
+	text-decoration:none;
+	color: #5A738F;
+}
+#navigation a:hover{
+    text-decoration: underline;
+}

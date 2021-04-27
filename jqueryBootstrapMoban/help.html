@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>常见问题</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" /><!-- animation -->
+<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->  
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script><!-- fixed nav js -->
+<script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+        $('.header-two').scrollToFixed();  
+        // previous summary up the page.
+
+        var summaries = $('.summary');
+        summaries.each(function(i) {
+            var summary = $(summaries[i]);
+            var next = summaries[i + 1];
+
+            summary.scrollToFixed({
+                marginTop: $('.header-two').outerHeight(true) + 10, 
+                zIndex: 999
+            });
+        });
+    });
+</script>
+<!-- //js --> 
+<!-- web-fonts -->
+
+
+ 
+<!-- web-fonts -->  
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="w3ls-header"><!--header-one--> 
+			<div class="w3ls-header-left">
+				<p><a href="../index.html">返回首页</a></p>
+			</div>
+			<div class="w3ls-header-right">
+				<ul>
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> 我的账户<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="login.html">登录 </a></li> 
+							<li><a href="signup.html">注册</a></li> 
+							<li><a href="login.html">我的购物车</a></li>  
+							<li><a href="login.html">钱包</a></li> 
+						</ul> 
+					</li> 
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-percent" aria-hidden="true"></i>今日消息<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="offers.html">现金返还优惠</a></li> 
+							<li><a href="offers.html">折扣商品</a></li>
+							<li><a href="offers.html">特价商品</a></li> 
+						</ul> 
+					</li> 
+					<!--
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gift" aria-hidden="true"></i> 南京云锦挂画s<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="offers.html">Product 南京云锦挂画</a></li> 
+							<li><a href="offers.html">Occasions Register</a></li>
+							<li><a href="offers.html">View Balance</a></li> 
+						</ul> 
+					</li> 
+					-->
+					<li class="dropdown head-dpdn">
+						<a href="contact.html" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i> 关于我们</a>
+					</li> 
+					<!--
+					<li class="dropdown head-dpdn">
+						<a href="card.html" class="dropdown-toggle"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Credit Card</a>
+					</li> 
+					-->
+					<li class="dropdown head-dpdn">
+						<a href="help.html" class="dropdown-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i> 帮助</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div> 
+		</div>
+		<div class="header-two"><!-- header-two -->
+			<div class="container" style="width: 1400px;">
+				<div class="header-logo">
+					<h1><a href="index.html" style="font-family: 隶书; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent; "><span style="font-family: 隶书; -webkit-text-stroke: 2px #ffffff; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent;">非遗</span>商城</a></h1>
+					  <h6></h6> 
+				</div>	
+				<div class="header-search">
+					<form action="#" method="post">
+						<input type="search" name="Search" placeholder="搜索商品..." required="">
+						<button type="submit" class="btn btn-default" style="background-color: #5A738F;" aria-label="Left Align">
+							<i class="fa fa-search" aria-hidden="true"> </i>
+						</button>
+					</form>
+				</div>
+				<div class="header-cart"> 
+					<div class="my-account">
+						<a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> 联系我们</a>						
+					</div>
+					<div class="cart"> 
+						<form action="#" method="post" class="last"> 
+							<input type="hidden" name="cmd" value="_cart" />
+							<input type="hidden" name="display" value="1" />
+							<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+						</form>  
+					</div>
+					<div class="clearfix"> </div> 
+				</div> 
+				<div class="clearfix"> </div>
+			</div>		
+		</div><!-- //header-two -->
+		<div class="header-three" style="background: -webkit-linear-gradient(left, #5A738F, #bfbfbf,#5A738F);"><!-- header-three -->
+			<div class="container">
+				<div class="menu">
+					<div class="cd-dropdown-wrapper">
+						<a class="cd-dropdown-trigger" href="#0">商品种类</a>
+						<nav class="cd-dropdown"> 
+							<a href="#0" class="cd-close">Close</a>
+							<ul class="cd-dropdown-content"> 
+								<li><a href="offers.html">今日促销</a></li>
+								<li class="has-children">
+									<a href="#">文创类</a> 
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products.html">文创类商品</a></li>
+										<li class="has-children">
+											<a href="#">漆艺</a>  
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">文创类商品</a></li> 
+												<!--<li class="has-children">
+													<a href="#0">雕漆技艺</a> 
+													<ul class="is-hidden"> 
+														<li class="go-back"><a href="#"> </a></li>
+														<li><a href="products.html">Android</a></li>
+														<li><a href="products.html">Windows</a></li>
+														<li><a href="products.html">Black berry</a></li>
+													</ul>
+												</li>-->
+												<li> <a href="products.html">雕漆技艺</a> </li>
+												<li> <a href="products.html">扬州漆器髹饰技艺</a> </li>
+												<li><a href="products.html">天台山干漆夹苎技艺</a></li>
+												<li><a href="products.html">厦门漆线雕技艺</a></li>
+												<li><a href="products.html">成都漆艺</a></li> 
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">剪纸</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">文创类商品 </a></li>
+												<li><a href="products.html">蔚县剪纸</a></li> 
+												<li><a href="products.html">丰宁满族剪纸</a></li>
+												<li><a href="products.html">中阳剪纸</a></li>
+												<li><a href="products.html">扬州剪纸</a></li>
+												<li><a href="products.html">傣族剪纸</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">雕刻</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">文创类商品</a></li>
+												<li><a href="products.html">象牙雕刻</a></li>
+												<li><a href="products.html">扬州玉雕</a></li>
+												<li><a href="products.html">阜新玛瑙雕</a></li>
+												<li><a href="products.html">夜光杯雕</a></li>
+												<!--<li class="has-children">
+													<a href="#">Computer</a>
+													<ul class="is-hidden">
+														<li class="go-back"><a href="#"> </a></li> 
+														<li><a href="products.html">Laptop </a></li>
+														<li><a href="products.html">Gaming PC</a></li>
+														<li><a href="products.html">Monitors</a></li>
+														<li><a href="products.html">Networking</a></li>
+														<li><a href="products.html">Printers & Supplies</a></li>
+														<li><a href="products.html">Accessories</a></li>
+													</ul>
+												</li> -->
+											</ul>
+										</li> 
+									</ul> <!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">服饰类</a> 
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products1.html">服饰类商品</a></li>
+										<li class="has-children">
+											<a href="#">编织</a> 
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#">服饰类商品</a></li>
+												<li><a href="products1.html">大名草编 </a></li>
+												<li><a href="products1.html">湖口草龙</a></li>
+												<li><a href="products1.html">东阳竹编 </a></li>
+												<li><a href="products1.html">舒席 </a></li>
+												<li><a href="products1.html">广宗柳编</a></li>
+												<li><a href="products1.html">维吾尔族枝条编织</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">织造</a> 
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#">服饰类商品</a></li>
+												<li><a href="products1.html">蚕丝织造技艺</a></li>  
+												<li><a href="products1.html">传统棉纺织技艺</a></li> 
+												<li><a href="products1.html">苗族织锦技艺</a></li> 
+												<li><a href="products1.html">傣族织锦技艺</a></li> 
+												<li><a href="products1.html">夏布织造技艺</a></li> 
+											</ul>
+										</li> 
+										<!--
+										<li class="has-children">
+											<a href="#">刺绣</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#">服饰类商品</a></li>
+												<li><a href="products1.html">苏绣</a></li>
+												<li><a href="products1.html">蜀绣</a></li>
+												<li><a href="products1.html">苗绣</a></li>
+												<li><a href="products1.html">挑花</a></li>
+												<li><a href="products1.html">土族盘绣</a></li>
+												<li><a href="products1.html">水族马尾绣</a></li>
+											</ul>
+										</li> 
+										-->
+									</ul> <!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="products2.html">艺术类</a> 
+									<ul class="cd-secondary-dropdown is-hidden"> 
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products2.html">艺术类商品</a></li>
+										<li class="has-children">
+											<a href="products2.html">文房四宝</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">艺术类商品</a></li>
+												<li><a href="products2.html">宣纸制作技艺</a></li> 
+												<li><a href="products2.html">砚台制作技艺</a></li>
+												<li><a href="products2.html">纸笺加工技艺</a></li>
+												<li><a href="products2.html">宣笔制作技艺</a></li>
+												<li><a href="products2.html">印泥制作技艺</a></li>
+											</ul>
+										</li> 
+										<li class="has-children"><a href="#">木版画</a>
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#">艺术类商品</a></li>
+												<li><a href="products2.html">杨柳青木版年画</a></li> 
+												<li><a href="products2.html">桃花坞木版年画 </a></li>
+												<li><a href="products2.html">漳州木版年画</a></li>
+												<li><a href="products2.html">朱仙镇木版年画</a></li>
+												<li><a href="products2.html">佛山木版年画</a></li>
+											</ul>
+										</li>
+									</ul><!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children --> 
+								<li class="has-children">
+									<a href="#">手工刺绣类</a> 
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products3.html">手工刺绣类商品</a></li>
+										<li class="has-children">
+											<a href="#">刺绣</a> 
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#"></a></li>
+												
+												<li><a href="products3.html">苏绣</a></li>
+												<li><a href="products3.html">蜀绣</a></li>
+												<li><a href="products3.html">苗绣</a></li>
+												<li><a href="products3.html">挑花</a></li>
+												<li><a href="products3.html">土族盘绣</a></li>
+												<li><a href="products3.html">水族马尾绣</a></li>
+											</ul>
+										</li> 
+										<!--
+										<li class="has-children">
+											<a href="#">Furniture </a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products3.html">Bedroom </a></li> 
+												<li><a href="products3.html">Dining Room </a></li>
+												<li><a href="products3.html">Kids' Furniture </a></li>
+												<li><a href="products3.html">Living Room</a></li>
+												<li><a href="products3.html">Office</a></li>
+												<li><a href="products3.html">Mattresses</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Home Decor </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products3.html">Lighting</a></li> 
+												<li><a href="products3.html">Painting</a></li>
+												<li><a href="products3.html">Curtains & Blinds</a></li>
+												<li><a href="products3.html">Patio Furniture</a></li>
+												<li><a href="products3.html">Wardrobes & Cabinets</a></li>
+												<li><a href="products3.html">Mattresses</a></li>
+											</ul>
+										</li>  
+										<li class="has-children">
+											<a href="#">Gardening & Lawn </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"> </a></li>  
+												<li><a href="products3.html">Gardening </a></li> 
+												<li><a href="products3.html">Landscaping </a></li>
+												<li><a href="products3.html">Sheds</a></li>
+												<li><a href="products3.html">Outdoor Storage  </a></li>
+												<li><a href="products3.html">Garden & Ideas </a></li>
+												<li><a href="products3.html">Patio Tips</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Garage Storage</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products3.html">Baskets & Bins </a></li> 
+												<li><a href="products3.html">Garage Door Openers</a></li>
+												<li><a href="products3.html">Free Standing Shelves </a></li>
+												<li><a href="products3.html">Floor cleaning</a></li>
+												<li><a href="products3.html">Tool Kits</a></li>
+											</ul>
+										</li>-->
+									</ul><!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children -->  
+								<li class="has-children">
+									<a href="#">收藏类</a>
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products4.html">收藏类商品</a></li>
+										<li class="has-children">
+											<a href="#">陶艺</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">藏族黑陶烧制技艺</a></li> 
+												<li><a href="products4.html">牙舟陶器烧制技艺</a></li>
+												<li><a href="products4.html">建水紫陶烧制技艺 </a></li>
+												<li><a href="products4.html">荥经砂器烧制技艺</a></li>
+												<li><a href="products4.html">钦州坭兴陶烧制技艺</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">烧制技艺</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">琉璃烧制技艺 </a></li> 
+												<li><a href="products4.html">临清贡砖烧制技艺 </a></li>
+												<li><a href="products4.html">定瓷烧制技艺</a></li>
+												<li><a href="products4.html">唐三彩烧制技艺</a></li>
+												<li><a href="products4.html">广彩瓷烧制技艺</a></li>
+											</ul>
+										</li> 
+										<!--
+										<li class="has-children">
+											<a href="#">Fitness </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">Fitness Accessories </a></li> 
+												<li><a href="products4.html">Exercise Machines </a></li>
+												<li><a href="products4.html">Ellipticals </a></li>
+												<li><a href="products4.html">Home Gyms</a></li> 
+												<li><a href="products4.html">非遗老古墨块s</a></li> 
+											</ul>
+										</li>
+										<li class="has-children">
+											<a href="#">Camping </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html"> Airbeds</a></li> 
+												<li><a href="products4.html">Tents </a></li>
+												<li><a href="products4.html">Gazebo's & Shelters</a></li>
+												<li><a href="products4.html">Coolers </a></li>
+												<li><a href="products4.html">Canopies</a></li>
+												<li><a href="products4.html">Sleeping Bags</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Camping Tools</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">Shooting </a></li> 
+												<li><a href="products4.html">Knives & Tools </a></li>
+												<li><a href="products4.html">Optics & Binoculars </a></li>
+												<li><a href="products4.html">Lights & Lanterns </a></li>
+												<li><a href="products4.html">Hunting Clothing </a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Other</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">Riding Gears & More </a></li> 
+												<li><a href="products4.html">Body Massagers </a></li>
+												<li><a href="products4.html">Health Monitors </a></li>
+												<li><a href="products4.html">Health Drinks </a></li> 
+											</ul>
+										</li> 	-->
+									</ul><!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children --> 
+								<li><a href="sitemap.html">网站地图</a></li>  
+							</ul> <!-- .cd-dropdown-content -->
+						</nav> <!-- .cd-dropdown -->
+					</div> <!-- .cd-dropdown-wrapper -->	 
+				</div>
+				<div class="move-text">
+					<div class="marquee"><a href="offers.html"> 欢迎来到文创贸易社区...... <span>全场八折... </span> <span> 折扣限时15天</span></a></div>
+					<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+					<script>
+					  $('.marquee').marquee({ pauseOnHover: true });
+					  //@ sourceURL=pen.js
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header --> 	
+	<!-- help-page -->
+	<div class="help">
+		<div class="container"> 
+			<h3 class="w3ls-title w3ls-title1">怎么才能帮到你</h3>  
+			<div class="header-search">
+				<form action="#" method="post">
+					<input type="search" name="Search" placeholder="请输入您遇到的问题." required="">
+					<i class="fa fa-search" aria-hidden="true"> </i>
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+						搜索
+					</button>
+				</form>
+			</div> 
+			<div class="faq-w3agile"> 
+				<h5>常见的十个问题</h5>
+				<ul class="faq">
+					<li class="item1"><a href="#" title="click here">电脑端淘拍视频编辑功能去哪里了？</a>
+						<ul>
+							<li class="subitem1"><p> 亲，pc淘拍视频编辑功能将在11月3号下线，请您知悉。</p></li>										
+						</ul>
+					</li>
+					<li class="item2"><a href="#" title="click here">2020年双12期间开具给消费者的发票时效是否有调整？</a>
+						<ul>
+							<li class="subitem1"><p> 亲，为保障消费者的购物体验，同时考虑由于订单量增加带来开票量激增，因此，平台调整了双12期间申请的发票处理时效。具体如下：
+												1）消费者在交易成功前申请开票的订单，交易成功时间在12.10-12.15期间的；
+												2）消费者在交易成功后申请开票的订单，申请时间在12.10-12.15期间。
+												您需要在交易成功后的20天内完成开票。
+												完成开票，是指针对提供电子发票的商家需在交易成功后的20天内完成线上回传，针对提供纸质发票的商家需在交易成功后的20天内寄出纸质发票并线上填写发票信息及发货单号，商家寄出发票的时间以商家录入快递单号的时间为准。</p></li>										
+						</ul>
+					</li>
+					<li class="item3"><a href="#" title="click here">为什么收到支付宝企业信息不合规，账户即将被限权？</a>
+						<ul>
+							<li class="subitem1"><p>亲，由于您的支付宝营业执照、法人信息及证件不完整或异常，若截止8月底未完成信息更新，将限制您账户的使用，包括但不限于限制您使用收单、资金类产品功能，请尽快完成企业信息更新，感谢您的配合！如有疑问可联系客服95188，请知悉！</p></li>										
+						</ul>
+					</li>
+					<li class="item4"><a href="#" title="click here">可临时支用保证金使用需要收费吗？</a>
+						<ul>
+							<li class="subitem1"><p>亲，可支用保证金在您使用之后，使用期限是60天，不需要额外支付费用，在到期前15天，平台会提醒您进行补缴，您需要在到期前将钱款充值到可用余额，系统会自动完成划扣。如逾期未补缴，将会对店铺进行监管。补齐保证金之后，系统会撤销店铺监管。</p></li>										
+						</ul>
+					</li> 
+					<li class="item5"><a href="#" title="click here">库存充足，详情页提示：此商品不支持在当前区域销售</a>
+						<ul>
+							<li class="subitem1"><p>亲，商品如设置区域限售或区域销售，导致商品不可卖，均会在详情页提示不支持在当前区域销售，建议检查二者的仓库/模板覆盖范围是否一致。区域销售：需设置仓的覆盖范围【点此】，消费者的收货地址如果有仓覆盖，并且该仓有库存才可以销售。区域限售：设置哪些地区可卖，哪些地区不可卖的方法，设置地址【点此】两者如果有一个条件导致不可售，则商品不可售哦。</p></li>										
+						</ul>
+					</li>
+					<li class="item6"><a href="#" title="click here">商品编辑上架提示：亲，入驻家装服务以前签订“长期绑定免费配送安装”服务承诺的商家</a>
+						<ul>
+							<li class="subitem1"><p>亲，若您发布商品提示 “入驻家装服务以及签订“长期绑定免费配送安装”服务承诺的商家，在指定类目下的商品，在指定的城市，需要满足“家具大件服务标准”方可进行上架操作”，原因是由于您没有订购指定服务，建议您点击链接查看是否正确订购：https://fwfront.tmall.com/manage/serviceList.htm</p></li>										
+						</ul>
+					</li>
+					<li class="item7"><a href="#" title="click here">为什么发布部分三文鱼及相关商品提示:涉及新型冠状病毒舆情风险</a>
+						<ul>
+							<li class="subitem1"><p> 亲，由于近期北京连续两天出现新增新冠确诊病例，并在新发地市场切割进口三文鱼的案板中检测到了新冠病毒，为保障消费者人身安全，平台将对货源地/发货地为北京的三文鱼产品做限制编辑/发布/上架处理，限制期限目前暂时无法确认，平台会根据疫情动向实时调整。请您自检自查店铺相关商品，并及时整改。疫情期间带来不便，还请谅解！</p></li>										
+						</ul>
+					</li>
+					<li class="item8"><a href="#" title="click here">设置商品发货时间提示：您选择的商品中未开放发货时间设置，请重新选择 / 设置了预售的商品无法取消预售活动 </a>
+						<ul>
+							<li class="subitem1"><p>各位亲爱的商家：为更好的保障消费者在天猫的发货时效体验，自2020年4月26日起，平台将针对部分类目的发货时间设置工具的使用权限进行调整，接下来您店铺可能会存在无法使用发货时间工具设置超过48小时发货的情况，具体请以设置页面提示为准。如您编辑商品提示：您选择的商品中未开放发货时间设置，请重新选择 / 设置了预售的商品无法取消预售活动，解决方案：请您点击编辑商品，提交发布后，即可清除原发货时间的数据。</p></li>										
+						</ul>
+					</li>
+					<li class="item9"><a href="#" title="click here">物流异常数据与对应看板不一致？</a>
+						<ul>
+							<li class="subitem1"><p>亲，菜鸟发货平台-包裹管理中物流数据看板正在逐步升级上线中，敬请关注~</p></li>										
+						</ul>
+					</li>
+					<li class="item10"><a href="#" title="click here">直播间粉丝亲密度分为什么没有增加？</a>
+						<ul>
+							<li class="subitem1"><p>亲，由于双11大促高峰，10.31日21点25分~11.1日0点15分，10.10日21点25分~11.11日0点15分直播间粉丝亲密度数据延迟；建议消费者尝试点击直播间左上角的粉丝亲密度更新分值，给您带去不便敬请谅解！</p></li>										
+						</ul>
+					</li> 
+				</ul>
+				<!-- script for tabs -->
+				<script type="text/javascript">
+					$(function() {
+					
+						var menu_ul = $('.faq > li > ul'),
+							   menu_a  = $('.faq > li > a');
+						
+						menu_ul.hide();
+					
+						menu_a.click(function(e) {
+							e.preventDefault();
+							if(!$(this).hasClass('active')) {
+								menu_a.removeClass('active');
+								menu_ul.filter(':visible').slideUp('normal');
+								$(this).addClass('active').next().stop(true,true).slideDown('normal');
+							} else {
+								$(this).removeClass('active');
+								$(this).next().stop(true,true).slideUp('normal');
+							}
+						});
+					
+					});
+				</script>
+				<!-- script for tabs --> 
+			</div> 
+		</div>
+	</div>
+	<!-- //login-page --> 
+	<!-- footer-top -->
+	<div class="w3agile-ftr-top">
+			<div class="container">
+				<div class="ftr-toprow">
+					<div class="col-md-4 ftr-top-grids">
+						<div class="ftr-top-left">
+							<i class="fa fa-truck" aria-hidden="true"></i>
+						</div> 
+						<div class="ftr-top-right">
+							<h4>全国包邮</h4>
+							<p>我们提供免费的快递服务</p>
+						</div> 
+						<div class="clearfix"> </div>
+					</div> 
+					<div class="col-md-4 ftr-top-grids">
+						<div class="ftr-top-left">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div> 
+						<div class="ftr-top-right">
+							<h4>顾客至上</h4>
+							<p>我们提供一流的售后服务</p>
+						</div> 
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 ftr-top-grids">
+						<div class="ftr-top-left">
+							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+						</div> 
+						<div class="ftr-top-right">
+							<h4>质量第一</h4>
+							<p>我们提供正宗的非遗文创产品 </p>
+						</div>
+						<div class="clearfix"> </div>
+					</div> 
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	<!-- //footer-top -->  
+	<!-- subscribe -->
+	<div class="subscribe"> 
+		<div class="container">
+			<div class="col-md-6 social-icons w3-agile-icons">
+				<h4>保持联系</h4>  
+				<ul>
+					<li><a href="#" class="fa fa-qq icon facebook"> </a></li>
+					<li><a href="#" class="fa fa-weixin icon twitter"> </a></li>
+					<li><a href="#" class="fa fa-github icon googleplus"> </a></li>
+					  
+					    
+				</ul>
+				<ul class="apps"> 
+					<li><h4>下载我们的应用 : </h4> </li>
+					<li><a href="#" class="fa fa-apple"></a></li>
+					<li><a href="#" class="fa fa-windows"></a></li>
+					<li><a href="#" class="fa fa-android"></a></li>
+				</ul>
+			</div> 
+			<div class="col-md-6 subscribe-right">
+				<h4>及时获取推送信息！</h4>  
+				<form action="#" method="post"> 
+					<input type="text" name="email" placeholder="输入你的邮箱" required="">
+					<input type="submit" value="订阅">
+				</form>
+				<div class="clearfix"> </div> 
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //subscribe --> 
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-info w3-agileits-info">
+				<div class="col-md-4 address-left agileinfo">
+					<div class="footer-logo header-logo">
+						<h2><a href="index.html" style="font-family: 隶书; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent; "><span style="font-family: 隶书; -webkit-text-stroke: 2px #ffffff; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent;">非遗</span>商城</a></h2>
+						  <h6></h6>
+					</div>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>湖南省衡阳市蒸湘区红湘街道南华大学</li>
+						<li><i class="fa fa-mobile"></i> 333 222 3333 </li>
+						<li><i class="fa fa-phone"></i> +86 11 4444 </li>
+						<li><i class="fa fa-envelope-o"></i> <a href="mailto:example@mail.com"> mail@example.com</a></li>
+					</ul> 
+				</div>
+				<div class="col-md-8 address-right">
+					<div class="col-md-4 footer-grids">
+						<h3>公司</h3>
+						<ul>
+							<li><a href="about.html">关于我们</a></li>
+							<li><a href="marketplace.html">市场</a></li>  
+							<li><a href="values.html">核心价值观</a></li>  
+							<li><a href="privacy.html">隐私政策</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>服务</h3>
+						<ul>
+							<li><a href="contact.html">联系我们</a></li>
+							<li><a href="login.html">退回</a></li> 
+							<li><a href="help.html">常见问题</a></li>
+							<li><a href="sitemap.html">网站地图</a></li>
+							<li><a href="login.html">订单状态</a></li>
+						</ul> 
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>支付方式</h3>
+						<ul>
+							<li><i class="fa fa-laptop" aria-hidden="true"></i><a href="login.html">微信支付</a></li>
+							<li><i class="fa fa-money" aria-hidden="true"></i> <a href="login.html">支付宝支付</a></li>
+						</ul>  
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->		
+	<div class="copy-right"> 
+		<div class="container">
+			<p>&copy; 2020.守艺人文化公司所有.<a target="_blank" href="#"></a></p>
+		</div>
+	</div> 
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 0);
+        			items[i].set('shipping2', 0);
+        		}
+        	}
+        });
+    </script>  
+	<!-- //cart-js --> 	 
+	<!-- menu js aim -->
+	<script src="js/jquery.menu-aim.js"> </script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<!-- //menu js aim --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

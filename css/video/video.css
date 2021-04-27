@@ -1,0 +1,48 @@
+body,  div,  p { margin: 0; padding: 0;}
+ul { list-style: none;}
+html { overflow: hidden;}
+body { width: 100%;  *cursor: default;overflow: hidden; font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;}
+#pageContain { overflow: hidden;}
+.page { display: none; width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;}
+.contain { width: 100%; height: 100%; display: none; position: relative; z-index: 0;}
+.current .contain, .slide .contain { display: block;}
+.current { display: block; z-index: 1;}
+.slide { display: block; z-index: 2;}
+.swipe { display: block; z-index: 3; transition-duration: 0ms !important; -webkit-transition-duration: 0ms !important;}
+.page1 { background: #cecece;}
+.page2 { background: #cecece;}
+.page3 { background: #d5d5d5;}
+.page4 { background: #ff00ff;}
+.page5 { background: #00ff00;}
+.page6 { background: #22ffff;}
+#navBar { z-index: 3; position: absolute; top: 30%; right: 3%;}
+#navBar .active { background: #87a5b8;}
+#navBar li { font-family: 隶书; cursor: pointer; margin-bottom: 10px; transition: all .7s ease; border-radius: 50%; line-height: 40px; text-align: center; width: 40px; height: 40px;}
+
+.txt { margin-top: 20%; font-size: 50px; color: #fff; text-align: center;}
+.clear{
+		height: 100px;
+	  }
+#video-top{
+	margin-top: 100px;
+	margin-left: 250px;
+	width: 780px;
+	height: 450px;
+	background-color: #ffffff;
+	-webkit-border-radius: 15px;
+	animation:rotateInDownLeft 1.5s both;
+}
+#video-top video{
+	animation:rotateInDownLeft 2s both;
+	width: 700px;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding: 20px;
+	outline: none;
+}
+#video-center{
+	
+}
+#video-buttom{
+	
+}

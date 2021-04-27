@@ -1,0 +1,17 @@
+#category .item{
+	width: 120px;
+	height: 165px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	padding-right: 10px;
+	border-right: 1px dashed bisque;
+	float: left;
+}
+#category .item .first{
+	padding-left: 0px;
+}
+#category .item .last{
+	padding-right: 0px;
+	border: 0;
+}

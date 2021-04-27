@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style --> 
+<link href="css/ken-burns.css" rel="stylesheet" type="text/css" media="all" /> <!-- banner slider --> 
+<link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"> <!-- carousel slider -->  
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+<!-- //js --> 
+<!-- web-fonts -->
+
+
+
+
+<!-- web-fonts --> 
+<script src="js/owl.carousel.js"></script>  
+<script>
+$(document).ready(function() { 
+	$("#owl-demo").owlCarousel({ 
+	  autoPlay: 3000, //Set AutoPlay to 3 seconds 
+	  items :4,
+	  itemsDesktop : [640,5],
+	  itemsDesktopSmall : [480,2],
+	  navigation : true
+ 
+	}); 
+}); 
+</script>
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+
+        // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+
+        $('.header-two').scrollToFixed();  
+        // previous summary up the page.
+
+        var summaries = $('.summary');
+        summaries.each(function(i) {
+            var summary = $(summaries[i]);
+            var next = summaries[i + 1];
+
+            summary.scrollToFixed({
+                marginTop: $('.header-two').outerHeight(true) + 10, 
+                zIndex: 999
+            });
+        });
+    });
+</script>
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+<script src="js/bootstrap.js"></script>	
+</head>
+<body>
+	<!--
+	<div class="agileits-modal modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+		aria-hidden="true">
+		<div class="modal-dialog">
+		
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h4>
+				</div>
+				<div class="modal-body modal-body-sub"> 
+					<h5>Select your delivery city & location </h5>  
+					<select class="form-control bfh-states" data-country="US" data-state="CA">
+						<option value="">Select Your Country</option>
+						<option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AS">American Samoa</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="AF">Armed Forces Africa</option><option value="AA">Armed Forces Americas</option><option value="AC">Armed Forces Canada</option><option value="AE">Armed Forces Europe</option><option value="AM">Armed Forces Middle East</option><option value="AP">Armed Forces Pacific</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FM">Federated States Of Micronesia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MH">Marshall Islands</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PW">Palau</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+					</select>
+					<input type="text" name="Name" placeholder="Enter your area / Landmark / Pincode" required="">
+					<button type="button" class="close2" data-dismiss="modal" aria-hidden="true">Skip & Explore</button>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<script>
+		$('#myModal88').modal('show');
+	</script> 
+	<!-- header -->
+	<div class="header">
+		<div class="w3ls-header"><!--header-one--> 
+			<div class="w3ls-header-left">
+				<p><a href="../index.html">返回首页</a></p>
+			</div>
+			<div class="w3ls-header-right">
+				<ul>
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> 我的账户<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="login.html">登录 </a></li> 
+							<li><a href="signup.html">注册</a></li> 
+							<li><a href="login.html">我的购物车</a></li>  
+							<li><a href="login.html">钱包</a></li> 
+						</ul> 
+					</li> 
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-percent" aria-hidden="true"></i>今日消息<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="offers.html">现金返还优惠</a></li> 
+							<li><a href="offers.html">折扣商品</a></li>
+							<li><a href="offers.html">特价商品</a></li> 
+						</ul> 
+					</li> 
+					<!--
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gift" aria-hidden="true"></i> 南京云锦挂画s<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="offers.html">Product 南京云锦挂画</a></li> 
+							<li><a href="offers.html">Occasions Register</a></li>
+							<li><a href="offers.html">View Balance</a></li> 
+						</ul> 
+					</li> 
+					-->
+					<li class="dropdown head-dpdn">
+						<a href="contact.html" class="dropdown-toggle"><i class="fa fa-map-marker" aria-hidden="true"></i> 关于我们</a>
+					</li> 
+					<!--
+					<li class="dropdown head-dpdn">
+						<a href="card.html" class="dropdown-toggle"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Credit Card</a>
+					</li> 
+					-->
+					<li class="dropdown head-dpdn">
+						<a href="help.html" class="dropdown-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i> 帮助</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div> 
+		</div>
+		<div class="header-two"><!-- header-two -->
+			<div class="container" style="width: 1400px;">
+				<div class="header-logo">
+					<h1><a href="index.html" style="font-family: 隶书; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent; "><span style="font-family: 隶书; -webkit-text-stroke: 2px #ffffff; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent;">非遗</span>商城</a></h1>
+					  <h6></h6> 
+				</div>	
+				<div class="header-search">
+					<form action="#" method="post">
+						<input type="search" name="Search" placeholder="搜索商品..." required="">
+						<button type="submit" class="btn btn-default" style="background-color: #5A738F;" aria-label="Left Align">
+							<i class="fa fa-search" aria-hidden="true"> </i>
+						</button>
+					</form>
+				</div>
+				<div class="header-cart"> 
+					<div class="my-account">
+						<a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> 联系我们</a>						
+					</div>
+					<div class="cart"> 
+						<form action="#" method="post" class="last"> 
+							<input type="hidden" name="cmd" value="_cart" />
+							<input type="hidden" name="display" value="1" />
+							<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+						</form>  
+					</div>
+					<div class="clearfix"> </div> 
+				</div> 
+				<div class="clearfix"> </div>
+			</div>		
+		</div><!-- //header-two -->
+		<div class="header-three" style="background: -webkit-linear-gradient(left, #5A738F, #bfbfbf,#5A738F);"><!-- header-three -->
+			<div class="container">
+				<div class="menu">
+					<div class="cd-dropdown-wrapper">
+						<a class="cd-dropdown-trigger" href="#0">商品种类</a>
+						<nav class="cd-dropdown"> 
+							<a href="#0" class="cd-close">Close</a>
+							<ul class="cd-dropdown-content"> 
+								<li><a href="offers.html">今日促销</a></li>
+								<li class="has-children">
+									<a href="#">文创类</a> 
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products.html">文创类商品</a></li>
+										<li class="has-children">
+											<a href="#">漆艺</a>  
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">文创类商品</a></li> 
+												<!--<li class="has-children">
+													<a href="#0">雕漆技艺</a> 
+													<ul class="is-hidden"> 
+														<li class="go-back"><a href="#"> </a></li>
+														<li><a href="products.html">Android</a></li>
+														<li><a href="products.html">Windows</a></li>
+														<li><a href="products.html">Black berry</a></li>
+													</ul>
+												</li>-->
+												<li> <a href="products.html">雕漆技艺</a> </li>
+												<li> <a href="products.html">扬州漆器髹饰技艺</a> </li>
+												<li><a href="products.html">天台山干漆夹苎技艺</a></li>
+												<li><a href="products.html">厦门漆线雕技艺</a></li>
+												<li><a href="products.html">成都漆艺</a></li> 
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">剪纸</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">文创类商品 </a></li>
+												<li><a href="products.html">蔚县剪纸</a></li> 
+												<li><a href="products.html">丰宁满族剪纸</a></li>
+												<li><a href="products.html">中阳剪纸</a></li>
+												<li><a href="products.html">扬州剪纸</a></li>
+												<li><a href="products.html">傣族剪纸</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">雕刻</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">文创类商品</a></li>
+												<li><a href="products.html">象牙雕刻</a></li>
+												<li><a href="products.html">扬州玉雕</a></li>
+												<li><a href="products.html">阜新玛瑙雕</a></li>
+												<li><a href="products.html">夜光杯雕</a></li>
+												<!--<li class="has-children">
+													<a href="#">Computer</a>
+													<ul class="is-hidden">
+														<li class="go-back"><a href="#"> </a></li> 
+														<li><a href="products.html">Laptop </a></li>
+														<li><a href="products.html">Gaming PC</a></li>
+														<li><a href="products.html">Monitors</a></li>
+														<li><a href="products.html">Networking</a></li>
+														<li><a href="products.html">Printers & Supplies</a></li>
+														<li><a href="products.html">Accessories</a></li>
+													</ul>
+												</li> -->
+											</ul>
+										</li> 
+									</ul> <!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="#">服饰类</a> 
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products1.html">服饰类商品</a></li>
+										<li class="has-children">
+											<a href="#">编织</a> 
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#">服饰类商品</a></li>
+												<li><a href="products1.html">大名草编 </a></li>
+												<li><a href="products1.html">湖口草龙</a></li>
+												<li><a href="products1.html">东阳竹编 </a></li>
+												<li><a href="products1.html">舒席 </a></li>
+												<li><a href="products1.html">广宗柳编</a></li>
+												<li><a href="products1.html">维吾尔族枝条编织</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">织造</a> 
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#">服饰类商品</a></li>
+												<li><a href="products1.html">蚕丝织造技艺</a></li>  
+												<li><a href="products1.html">传统棉纺织技艺</a></li> 
+												<li><a href="products1.html">苗族织锦技艺</a></li> 
+												<li><a href="products1.html">傣族织锦技艺</a></li> 
+												<li><a href="products1.html">夏布织造技艺</a></li> 
+											</ul>
+										</li> 
+										<!--
+										<li class="has-children">
+											<a href="#">刺绣</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#">服饰类商品</a></li>
+												<li><a href="products1.html">苏绣</a></li>
+												<li><a href="products1.html">蜀绣</a></li>
+												<li><a href="products1.html">苗绣</a></li>
+												<li><a href="products1.html">挑花</a></li>
+												<li><a href="products1.html">土族盘绣</a></li>
+												<li><a href="products1.html">水族马尾绣</a></li>
+											</ul>
+										</li> 
+										-->
+									</ul> <!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children -->
+								<li class="has-children">
+									<a href="products2.html">艺术类</a> 
+									<ul class="cd-secondary-dropdown is-hidden"> 
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products2.html">艺术类商品</a></li>
+										<li class="has-children">
+											<a href="products2.html">文房四宝</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#">艺术类商品</a></li>
+												<li><a href="products2.html">宣纸制作技艺</a></li> 
+												<li><a href="products2.html">砚台制作技艺</a></li>
+												<li><a href="products2.html">纸笺加工技艺</a></li>
+												<li><a href="products2.html">宣笔制作技艺</a></li>
+												<li><a href="products2.html">印泥制作技艺</a></li>
+											</ul>
+										</li> 
+										<li class="has-children"><a href="#">木版画</a>
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#">艺术类商品</a></li>
+												<li><a href="products2.html">杨柳青木版年画</a></li> 
+												<li><a href="products2.html">桃花坞木版年画 </a></li>
+												<li><a href="products2.html">漳州木版年画</a></li>
+												<li><a href="products2.html">朱仙镇木版年画</a></li>
+												<li><a href="products2.html">佛山木版年画</a></li>
+											</ul>
+										</li>
+									</ul><!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children --> 
+								<li class="has-children">
+									<a href="#">手工刺绣类</a> 
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products3.html">手工刺绣类商品</a></li>
+										<li class="has-children">
+											<a href="#">刺绣</a> 
+											<ul class="is-hidden">  
+												<li class="go-back"><a href="#"></a></li>
+												
+												<li><a href="products3.html">苏绣</a></li>
+												<li><a href="products3.html">蜀绣</a></li>
+												<li><a href="products3.html">苗绣</a></li>
+												<li><a href="products3.html">挑花</a></li>
+												<li><a href="products3.html">土族盘绣</a></li>
+												<li><a href="products3.html">水族马尾绣</a></li>
+											</ul>
+										</li> 
+										<!--
+										<li class="has-children">
+											<a href="#">Furniture </a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products3.html">Bedroom </a></li> 
+												<li><a href="products3.html">Dining Room </a></li>
+												<li><a href="products3.html">Kids' Furniture </a></li>
+												<li><a href="products3.html">Living Room</a></li>
+												<li><a href="products3.html">Office</a></li>
+												<li><a href="products3.html">Mattresses</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Home Decor </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products3.html">Lighting</a></li> 
+												<li><a href="products3.html">Painting</a></li>
+												<li><a href="products3.html">Curtains & Blinds</a></li>
+												<li><a href="products3.html">Patio Furniture</a></li>
+												<li><a href="products3.html">Wardrobes & Cabinets</a></li>
+												<li><a href="products3.html">Mattresses</a></li>
+											</ul>
+										</li>  
+										<li class="has-children">
+											<a href="#">Gardening & Lawn </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"> </a></li>  
+												<li><a href="products3.html">Gardening </a></li> 
+												<li><a href="products3.html">Landscaping </a></li>
+												<li><a href="products3.html">Sheds</a></li>
+												<li><a href="products3.html">Outdoor Storage  </a></li>
+												<li><a href="products3.html">Garden & Ideas </a></li>
+												<li><a href="products3.html">Patio Tips</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Garage Storage</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products3.html">Baskets & Bins </a></li> 
+												<li><a href="products3.html">Garage Door Openers</a></li>
+												<li><a href="products3.html">Free Standing Shelves </a></li>
+												<li><a href="products3.html">Floor cleaning</a></li>
+												<li><a href="products3.html">Tool Kits</a></li>
+											</ul>
+										</li>-->
+									</ul><!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children -->  
+								<li class="has-children">
+									<a href="#">收藏类</a>
+									<ul class="cd-secondary-dropdown is-hidden">
+										<li class="go-back"><a href="#">Menu</a></li>
+										<li class="see-all"><a href="products4.html">收藏类商品</a></li>
+										<li class="has-children">
+											<a href="#">陶艺</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">藏族黑陶烧制技艺</a></li> 
+												<li><a href="products4.html">牙舟陶器烧制技艺</a></li>
+												<li><a href="products4.html">建水紫陶烧制技艺 </a></li>
+												<li><a href="products4.html">荥经砂器烧制技艺</a></li>
+												<li><a href="products4.html">钦州坭兴陶烧制技艺</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">烧制技艺</a> 
+											<ul class="is-hidden"> 
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">琉璃烧制技艺 </a></li> 
+												<li><a href="products4.html">临清贡砖烧制技艺 </a></li>
+												<li><a href="products4.html">定瓷烧制技艺</a></li>
+												<li><a href="products4.html">唐三彩烧制技艺</a></li>
+												<li><a href="products4.html">广彩瓷烧制技艺</a></li>
+											</ul>
+										</li> 
+										<!--
+										<li class="has-children">
+											<a href="#">Fitness </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">Fitness Accessories </a></li> 
+												<li><a href="products4.html">Exercise Machines </a></li>
+												<li><a href="products4.html">Ellipticals </a></li>
+												<li><a href="products4.html">Home Gyms</a></li> 
+												<li><a href="products4.html">非遗老古墨块s</a></li> 
+											</ul>
+										</li>
+										<li class="has-children">
+											<a href="#">Camping </a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html"> Airbeds</a></li> 
+												<li><a href="products4.html">Tents </a></li>
+												<li><a href="products4.html">Gazebo's & Shelters</a></li>
+												<li><a href="products4.html">Coolers </a></li>
+												<li><a href="products4.html">Canopies</a></li>
+												<li><a href="products4.html">Sleeping Bags</a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Camping Tools</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">Shooting </a></li> 
+												<li><a href="products4.html">Knives & Tools </a></li>
+												<li><a href="products4.html">Optics & Binoculars </a></li>
+												<li><a href="products4.html">Lights & Lanterns </a></li>
+												<li><a href="products4.html">Hunting Clothing </a></li>
+											</ul>
+										</li> 
+										<li class="has-children">
+											<a href="#">Other</a> 
+											<ul class="is-hidden">
+												<li class="go-back"><a href="#"></a></li>
+												<li><a href="products4.html">Riding Gears & More </a></li> 
+												<li><a href="products4.html">Body Massagers </a></li>
+												<li><a href="products4.html">Health Monitors </a></li>
+												<li><a href="products4.html">Health Drinks </a></li> 
+											</ul>
+										</li> 	-->
+									</ul><!-- .cd-secondary-dropdown --> 
+								</li> <!-- .has-children --> 
+								<li><a href="sitemap.html">网站地图</a></li>  
+							</ul> <!-- .cd-dropdown-content -->
+						</nav> <!-- .cd-dropdown -->
+					</div> <!-- .cd-dropdown-wrapper -->	 
+				</div>
+				<div class="move-text">
+					<div class="marquee"><a href="offers.html"> 欢迎来到文创贸易社区...... <span>全场八折... </span> <span> 折扣限时15天</span></a></div>
+					<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+					<script>
+					  $('.marquee').marquee({ pauseOnHover: true });
+					  //@ sourceURL=pen.js
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->	
+	<!-- banner -->
+	<div class="banner">
+		<div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
+			<!-- Wrapper-for-Slides -->
+            <div class="carousel-inner" role="listbox">  
+                <div class="item active"><!-- First-Slide -->
+                    <img src="images/5.jpg" alt="" class="img-responsive" />
+                    <div class="carousel-caption kb_caption kb_caption_right">
+                        <h3 data-animation="animated flipInX">全场 <span>八折</span> 起购</h3>
+                        <h4 data-animation="animated flipInX">持续15天</h4>
+                    </div>
+                </div>  
+                <div class="item"> <!-- Second-Slide -->
+                    <img src="images/8.jpg" alt="" class="img-responsive" />
+                    <div class="carousel-caption kb_caption kb_caption_right">
+                        <h3 data-animation="animated fadeInDown">文创社区，期待您的精彩创造</h3>
+                        <h4 data-animation="animated fadeInUp">请尽情发挥您的创意吧</h4>
+                    </div>
+                </div>
+ 
+                <div class="item"><!-- Third-Slide -->
+                    <img src="images/3.jpg" alt="" class="img-responsive"/>
+                    <div class="carousel-caption kb_caption kb_caption_center">
+                        <h3 data-animation="animated fadeInLeft">节日大促销</h3>
+                        <h4 data-animation="animated flipInX">热烈庆祝国际非物质文化遗产节开幕</h4>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- Left-Button -->
+            <a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+				<span class="fa fa-angle-left kb_icons" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a> 
+            <!-- Right-Button -->
+            <a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+                <span class="fa fa-angle-right kb_icons" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> 
+        </div>
+		<script src="js/custom.js"></script>
+	</div>
+	<!-- //banner -->  
+	<!-- welcome -->
+	<div class="welcome"> 
+		<div class="container"> 
+			<div class="welcome-info">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class=" nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" >
+							<i class="fa fa-laptop" aria-hidden="true"></i> 
+							<h5>文创类</h5>
+						</a></li>
+						<li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab"> 
+							<i class="fa fa-female" aria-hidden="true"></i>
+							<h5>服饰类</h5>
+						</a></li>
+						<li role="presentation"><a href="#james" role="tab" id="james-tab" data-toggle="tab"> 
+							<i class="fa fa-gift" aria-hidden="true"></i>
+							<h5>艺术类</h5>
+						</a></li>
+						<li role="presentation"><a href="#decor" role="tab" id="decor-tab" data-toggle="tab"> 
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<h5>手工刺绣类</h5>
+						</a></li>
+						<li role="presentation"><a href="#sports" role="tab" id="sports-tab" data-toggle="tab"> 
+							<i class="fa fa-motorcycle" aria-hidden="true"></i>
+							<!--<img class="" src="images/e1.png" alt="img" height="70.4" width="50"></a>-->
+							<h5>收藏类</h5>
+						</a></li> 
+					</ul>
+					<div class="clearfix"> </div>
+					<h3 class="w3ls-title">特色产品</h3>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+							<div class="tabcontent-grids">  
+								<div id="owl-demo" class="owl-carousel"> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products.html"><img src="images/e1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">广西壮族手工绣球</a></h4>
+												<p>绣球广西壮族靖西旧州特产纯手工民族精品刺绣</p>
+												<h5>$100</h5> 
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="广西壮族手工绣球" /> 
+													<input type="hidden" name="amount" value="200.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>  
+											</div>   
+										</div>   
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits">
+											<div class="new-tag"><h6>Sale</h6></div>
+											<a href="products.html"><img src="images/e2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">手工剪纸画</a></h4>
+												<p>剪纸画装饰挂件中国结特色井架手工艺传统礼品</p> 
+												<h5>$300</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="手工剪纸画" /> 
+													<input type="hidden" name="amount" value="700.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products.html"><img src="images/e3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">川剧脸谱</a></h4>
+												<p>中国礼品面具，具有多种花色</p>
+												<h5>$70</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="川剧脸谱" /> 
+													<input type="hidden" name="amount" value="300.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products.html"><img src="images/e4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">北京手工艺京剧人偶</a></h4>
+												<p>北京手工艺京剧绢人桌面摆件中国特色礼品</p>
+												<h5>$80</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="北京手工艺京剧人偶"/> 
+													<input type="hidden" name="amount" value="100.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products.html"><img src="images/e1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">广西壮族手工绣球</a></h4>
+												<p>绣球广西壮族靖西旧州特产纯手工民族精品刺绣</p>
+												<h5>$100</h5> 
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="广西壮族手工绣球" /> 
+													<input type="hidden" name="amount" value="200.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>  
+											</div>   
+										</div>   
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits">
+											<div class="new-tag"><h6>Sale</h6></div>
+											<a href="products.html"><img src="images/e2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">手工剪纸画</a></h4>
+												<p>剪纸画装饰挂件中国结特色井架手工艺传统礼品</p> 
+												<h5>$300</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="手工剪纸画" /> 
+													<input type="hidden" name="amount" value="700.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products.html"><img src="images/e3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">川剧脸谱</a></h4>
+												<p>中国礼品面具，具有多种花色</p>
+												<h5>$70</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="川剧脸谱" /> 
+													<input type="hidden" name="amount" value="300.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products.html"><img src="images/e4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products.html">北京手工艺京剧人偶</a></h4>
+												<p>北京手工艺京剧绢人桌面摆件中国特色礼品</p>
+												<h5>$80</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="北京手工艺京剧人偶"/> 
+													<input type="hidden" name="amount" value="100.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+								</div> 
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
+							<div class="tabcontent-grids">
+								<script>
+									$(document).ready(function() { 
+										$("#owl-demo1").owlCarousel({
+									 
+										  autoPlay: 3000, //Set AutoPlay to 3 seconds
+									 
+										  items :4,
+										  
+										  itemsDesktop : [640,5],
+										  itemsDesktopSmall : [414,4],
+										  navigation : true
+									 
+										});
+										
+									}); 
+								</script>
+								<div id="owl-demo1" class="owl-carousel"> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products1.html"><img src="images/f1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">旗袍手工挂件</a></h4>
+												<p>中式服装手工挂件旗袍汉服挂件中国风挂件</p>
+												<h5>$10</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="旗袍手工挂件" /> 
+													<input type="hidden" name="amount" value="10.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div>    
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits">
+											<div class="new-tag"><h6>20% <br> Off</h6></div>
+											<a href="products1.html"><img src="images/f2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">虎头鞋婴儿冬</a></h4>
+												<p>传承手艺男女宝宝虎头鞋冬加绒加厚手工鞋</p>
+												<h5>$168</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="虎头鞋婴儿冬" /> 
+													<input type="hidden" name="amount" value="168.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products1.html"><img src="images/f3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">苏绣丝绸旗袍秋季</a></h4>
+												<p>苏绣丝绸旗袍秋季新款时尚少女清新淡雅中国风</p>
+												<h5>$260</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="苏绣丝绸旗袍秋季" /> 
+													<input type="hidden" name="amount" value="260.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products1.html"><img src="images/f4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">桑蚕丝苏绣旗袍</a></h4>
+												<p>真丝披肩女秋季桑蚕丝苏绣配旗袍外搭披风斗篷</p>
+												<h5>$698</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="桑蚕丝苏绣旗袍" /> 
+													<input type="hidden" name="amount" value="698.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>      
+										</div> 
+									</div> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products1.html"><img src="images/f1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">旗袍手工挂件</a></h4>
+												<p>中式服装手工挂件旗袍汉服挂件中国风挂件</p>
+												<h5>$10</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="旗袍手工挂件" /> 
+													<input type="hidden" name="amount" value="10.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div>    
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits">
+											<div class="new-tag"><h6>20% <br> Off</h6></div>
+											<a href="products1.html"><img src="images/f2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">虎头鞋婴儿冬</a></h4>
+												<p>传承手艺男女宝宝虎头鞋冬加绒加厚手工鞋</p>
+												<h5>$168</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="虎头鞋婴儿冬" /> 
+													<input type="hidden" name="amount" value="168.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products1.html"><img src="images/f3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">苏绣丝绸旗袍秋季</a></h4>
+												<p>苏绣丝绸旗袍秋季新款时尚少女清新淡雅中国风</p>
+												<h5>$260</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="苏绣丝绸旗袍秋季" /> 
+													<input type="hidden" name="amount" value="260.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products1.html"><img src="images/f4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products1.html">桑蚕丝苏绣旗袍</a></h4>
+												<p>真丝披肩女秋季桑蚕丝苏绣配旗袍外搭披风斗篷</p>
+												<h5>$698</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="桑蚕丝苏绣旗袍" /> 
+													<input type="hidden" name="amount" value="698.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>      
+										</div> 
+									</div>   
+								</div>   
+							</div>
+						</div> 
+						<div role="tabpanel" class="tab-pane fade" id="james" aria-labelledby="james-tab">
+							<div class="tabcontent-grids">
+								<script>
+									$(document).ready(function() { 
+										$("#owl-demo2").owlCarousel({
+									 
+										  autoPlay: 3000, //Set AutoPlay to 3 seconds
+									 
+										  items :4,
+										  itemsDesktop : [640,5],
+										  itemsDesktopSmall : [414,4],
+										  navigation : true
+									 
+										});
+										
+									}); 
+								</script>
+								<div id="owl-demo2" class="owl-carousel"> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products6.html"><img src="images/p1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">【大漆福禄】手把件</a></h4>
+												<p>达隆[大漆福禄]手把件纯手工国家非遗工艺文玩</p>
+												<h5>$498</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="【大漆福禄】手把件" /> 
+													<input type="hidden" name="amount" value="498.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>20% <br> Off</h6></div>
+											<a href="products6.html"><img src="images/p2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">高档精品羊毫宣笔</a></h4>
+												<p>佘征军大师亲制《莲蓬斗笔》光峰纯羊毫长峰毛笔</p>
+												<h5>$2500</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="高档精品羊毫宣笔" /> 
+													<input type="hidden" name="amount" value="2500.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item"> 
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>Sale</h6></div>
+											<a href="products6.html"><img src="images/p3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">赋比兴宣纸</a></h4>
+												<p>国家非遗赋比兴宣纸大师级安徽泾县</p>
+												<h5>$60</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="赋比兴宣纸" /> 
+													<input type="hidden" name="amount" value="60.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products6.html"><img src="images/p4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">南京云锦挂画</a></h4>
+												<p>云锦卷轴装饰画特色礼品南京云锦挂画</p>
+												<h5>$460</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="南京云锦挂画" /> 
+													<input type="hidden" name="amount" value="460.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products6.html"><img src="images/p1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">【大漆福禄】手把件</a></h4>
+												<p>达隆[大漆福禄]手把件纯手工国家非遗工艺文玩</p>
+												<h5>$498</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="【大漆福禄】手把件" /> 
+													<input type="hidden" name="amount" value="498.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>20% <br> Off</h6></div>
+											<a href="products6.html"><img src="images/p2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">高档精品羊毫宣笔</a></h4>
+												<p>佘征军大师亲制《莲蓬斗笔》光峰纯羊毫长峰毛笔</p>
+												<h5>$2500</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="高档精品羊毫宣笔" /> 
+													<input type="hidden" name="amount" value="2500.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item"> 
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>Sale</h6></div>
+											<a href="products6.html"><img src="images/p3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">赋比兴宣纸</a></h4>
+												<p>国家非遗赋比兴宣纸大师级安徽泾县</p>
+												<h5>$60</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="赋比兴宣纸" /> 
+													<input type="hidden" name="amount" value="60.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products6.html"><img src="images/p4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products6.html">南京云锦挂画</a></h4>
+												<p>云锦卷轴装饰画特色礼品南京云锦挂画</p>
+												<h5>$460</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="南京云锦挂画" /> 
+													<input type="hidden" name="amount" value="460.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div> 
+									</div> 
+								</div>    
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="decor" aria-labelledby="decor-tab">
+							<div class="tabcontent-grids">
+								<script>
+									$(document).ready(function() { 
+										$("#owl-demo3").owlCarousel({
+									 
+										  autoPlay: 3000, //Set AutoPlay to 3 seconds
+									 
+										  items :4,
+										  itemsDesktop : [640,5],
+										  itemsDesktopSmall : [414,4],
+										  navigation : true
+									 
+										});
+										
+									}); 
+								</script>
+								<div id="owl-demo3" class="owl-carousel"> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>Sale</h6></div>
+											<a href="products3.html"><img src="images/h1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">蜀绣手工工艺台屏</a></h4>
+												<p>蜀绣手工刺绣双面工艺台屏摆件</p>
+												<h5>$308</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="蜀绣手工工艺台屏" /> 
+													<input type="hidden" name="amount" value="308.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>10%<br>Off</h6></div>
+											<a href="products3.html"><img src="images/h2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">江南水乡刺绣</a></h4>
+												<p>江南水乡刺绣苏绣成品挂画</p>
+												<h5>$539</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="江南水乡刺绣" /> 
+													<input type="hidden" name="amount" value="539.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products3.html"><img src="images/h3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">苏绣团扇</a></h4>
+												<p>古风刺绣团扇手工双面苏绣扇子非遗手工艺定制</p>
+												<h5>$250</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="苏绣团扇" /> 
+													<input type="hidden" name="amount" value="250.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products3.html"><img src="images/h4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">非遗苏绣花开富贵</a></h4>
+												<p>非遗苏绣精品刺绣牡丹花开富贵背景墙装饰挂画</p>
+												<h5>$5592</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="非遗苏绣花开富贵" /> 
+													<input type="hidden" name="amount" value="5592.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>Sale</h6></div>
+											<a href="products3.html"><img src="images/h1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">蜀绣手工工艺台屏</a></h4>
+												<p>蜀绣手工刺绣双面工艺台屏摆件</p>
+												<h5>$308</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="蜀绣手工工艺台屏" /> 
+													<input type="hidden" name="amount" value="308.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>10%<br>Off</h6></div>
+											<a href="products3.html"><img src="images/h2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">江南水乡刺绣</a></h4>
+												<p>江南水乡刺绣苏绣成品挂画
+</p>
+												<h5>$539</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="江南水乡刺绣" /> 
+													<input type="hidden" name="amount" value="539.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products3.html"><img src="images/h3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">苏绣团扇</a></h4>
+												<p>古风刺绣团扇手工双面苏绣扇子非遗手工艺定制</p>
+												<h5>$250</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="苏绣团扇" /> 
+													<input type="hidden" name="amount" value="250.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products3.html"><img src="images/h4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products3.html">非遗苏绣花开富贵</a></h4>
+												<p>非遗苏绣精品刺绣牡丹花开富贵背景墙装饰挂画</p>
+												<h5>$5592</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="非遗苏绣花开富贵" /> 
+													<input type="hidden" name="amount" value="5592.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>  
+								</div>    
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="sports" aria-labelledby="sports-tab">
+							<div class="tabcontent-grids">
+								<script>
+									$(document).ready(function() { 
+										$("#owl-demo4").owlCarousel({
+									 
+										  autoPlay: 3000, //Set AutoPlay to 3 seconds
+									 
+										  items :4,
+										  itemsDesktop : [640,5],
+										  itemsDesktopSmall : [414,4],
+										  navigation : true
+									 
+										}); 
+									}); 
+								</script>
+								<div id="owl-demo4" class="owl-carousel"> 
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products4.html"><img src="images/s1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">非遗阜新玛瑙雕塑</a></h4>
+												<p>非遗工艺品天然红玛手工瑙雕刻名师玉雕收藏品</p>
+												<h5>$10000</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="非遗阜新玛瑙雕塑"/> 
+													<input type="hidden" name="amount" value="10000.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products4.html"><img src="images/s2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">非遗艺术铜工艺品</a></h4>
+												<p>卡希盾铜四君子非遗艺术铜工艺品办公桌摆件</p>
+												<h5>$10013</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="非遗艺术铜工艺品"/> 
+													<input type="hidden" name="amount" value="10013.00"/>
+													<button type="submit" class="w3ls-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>20% <br>Off</h6></div>
+											<a href="products4.html"><img src="images/s3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">天然红玛手工雕刻品</a></h4>
+												<p>非遗工艺品天然红玛手工瑙雕刻名师玉雕收藏品</p>
+												<h5>$60000</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="天然红玛手工雕刻品" /> 
+													<input type="hidden" name="amount" value="60000.00"/> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products4.html"><img src="images/s4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">年年有余陶瓷工艺品</a></h4>
+												<p>卡希盾年年有余哥窑盘非遗漆线雕陶瓷工艺品摆件</p>
+												<h5>$4230</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="年年有余陶瓷工艺品" /> 
+													<input type="hidden" name="amount" value="4230.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>New</h6></div>
+											<a href="products4.html"><img src="images/s1.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">非遗阜新玛瑙雕塑</a></h4>
+												<p>非遗阜新玛瑙雕素活天然黑玛瑙雕刻壶</p>
+												<h5>$10000</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="非遗阜新玛瑙雕塑"/> 
+													<input type="hidden" name="amount" value="10000.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>         
+										</div>  
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products4.html"><img src="images/s2.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">非遗艺术铜工艺品</a></h4>
+												<p>卡希盾铜四君子非遗艺术铜工艺品办公桌摆件</p>
+												<h5>$10013</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="非遗艺术铜工艺品"/> 
+													<input type="hidden" name="amount" value="10013.00"/>
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>        
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<div class="new-tag"><h6>20% <br>Off</h6></div>
+											<a href="products4.html"><img src="images/s3.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">天然红玛手工雕刻品</a></h4>
+												<p>非遗工艺品天然红玛手工瑙雕刻名师玉雕收藏品</p>
+												<h5>$60000</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="天然红玛手工雕刻品" /> 
+													<input type="hidden" name="amount" value="60000.00"/> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div> 
+									</div>
+									<div class="item">
+										<div class="glry-w3agile-grids agileits"> 
+											<a href="products4.html"><img src="images/s4.png" alt="img"></a>
+											<div class="view-caption agileits-w3layouts">           
+												<h4><a href="products4.html">年年有余陶瓷工艺品</a></h4>
+												<p>>卡希盾年年有余哥窑盘非遗漆线雕陶瓷工艺品摆件</p>
+												<h5>$4230</h5>
+												<form action="#" method="post">
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" /> 
+													<input type="hidden" name="w3ls_item" value="年年有余陶瓷工艺品" /> 
+													<input type="hidden" name="amount" value="4230.00" /> 
+													<button type="submit" class="w3ls-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> 加入购物车</button>
+												</form>
+											</div>       
+										</div> 
+									</div>
+								</div>    
+							</div>
+						</div> 
+					</div>   
+				</div>  
+			</div>  	
+		</div>  	
+	</div> 
+	<!-- //welcome -->
+	<!-- add-products -->
+	<div class="add-products"> 
+		<div class="container">  
+			<div class="add-products-row">
+				<div class="w3ls-add-grids">
+					<a href="products1.html"> 
+						<h4>满300 <span>减40</span> 元</h4>
+						<h6>现在购买 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+					</a>
+				</div>
+				<div class="w3ls-add-grids w3ls-add-grids-mdl">
+					<a href="products1.html"> 
+						<h4>平均<span>7.8</span> 折</h4>
+						<h6>现在购买 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+					</a>
+				</div>
+				<div class="w3ls-add-grids w3ls-add-grids-mdl1">
+					<a href="products.html"> 
+						<h4>清仓大甩卖<span> 欲购从速 !</span></h4>
+						<h6>现在购买 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+					</a>
+				</div>
+				<div class="clerfix"> </div>
+			</div>  	
+		</div>  	
+	</div>
+	<!-- //add-products -->
+	<!-- coming soon -->
+	<div class="soon">
+		<div class="container">
+			<h3>促销倒计时</h3>
+			<h4>走过路过不要错过</h4>  
+			<div id="countdown1" class="ClassyCountdownDemo"></div>
+		</div> 
+	</div>
+	<!-- //coming soon -->
+	<!-- deals -->
+	<!--
+	<div class="deals"> 
+		<div class="container"> 
+			<h3 class="w3ls-title">DEALS OF THE DAY </h3>
+			<div class="deals-row">
+				<div class="col-md-3 focus-grid"> 
+					<a href="products.html" class="wthree-btn"> 
+						<div class="focus-image"><i class="fa fa-mobile"></i></div>
+						<h4 class="clrchg">Mobiles</h4> 
+					</a>
+				</div>
+				<div class="col-md-3 focus-grid"> 
+					<a href="products.html" class="wthree-btn wthree1"> 
+						<div class="focus-image"><i class="fa fa-laptop"></i></div>
+						<h4 class="clrchg"> 文创类 & Appliances</h4> 
+					</a>
+				</div> 
+				<div class="col-md-3 focus-grid"> 
+					<a href="products4.html" class="wthree-btn wthree2"> 
+						<div class="focus-image"><i class="fa fa-wheelchair"></i></div>
+						<h4 class="clrchg">Furnitures</h4>
+					</a>
+				</div> 
+				<div class="col-md-3 focus-grid"> 
+					<a href="products3.html" class="wthree-btn wthree3"> 
+						<div class="focus-image"><i class="fa fa-home"></i></div>
+						<h4 class="clrchg">Home Decor</h4>
+					</a>
+				</div> 
+				<div class="col-md-2 focus-grid w3focus-grid-mdl"> 
+					<a href="products9.html" class="wthree-btn wthree3"> 
+						<div class="focus-image"><i class="fa fa-book"></i></div>
+						<h4 class="clrchg">Books & Music</h4> 
+					</a>
+				</div>
+				<div class="col-md-2 focus-grid w3focus-grid-mdl"> 
+					<a href="products1.html" class="wthree-btn wthree4"> 
+						<div class="focus-image"><i class="fa fa-asterisk"></i></div>
+						<h4 class="clrchg">Fashion</h4>
+					</a>
+				</div>
+				<div class="col-md-2 focus-grid w3focus-grid-mdl"> 
+					<a href="products2.html" class="wthree-btn wthree2"> 
+						<div class="focus-image"><i class="fa fa-gamepad"></i></div>
+						<h4 class="clrchg">Kids</h4>
+					</a>
+				</div> 
+				<div class="col-md-2 focus-grid w3focus-grid-mdl"> 
+					<a href="products5.html" class="wthree-btn wthree"> 
+						<div class="focus-image"><i class="fa fa-shopping-basket"></i></div>
+						<h4 class="clrchg">Groceries</h4>
+					</a>
+				</div> 
+				<div class="col-md-2 focus-grid w3focus-grid-mdl"> 
+					<a href="products7.html" class="wthree-btn wthree5"> 
+						<div class="focus-image"><i class="fa fa-medkit"></i></div>
+						<h4 class="clrchg">Health</h4> 
+					</a>
+				</div> 
+				<div class="col-md-2 focus-grid w3focus-grid-mdl"> 
+					<a href="products8.html" class="wthree-btn wthree1"> 
+						<div class="focus-image"><i class="fa fa-car"></i></div>
+						<h4 class="clrchg">Automotive</h4> 
+					</a>
+				</div>
+				<div class="col-md-3 focus-grid"> 
+					<a href="products5.html" class="wthree-btn wthree2"> 
+						<div class="focus-image"><i class="fa fa-cutlery"></i></div>
+						<h4 class="clrchg">Food</h4> 
+					</a>
+				</div>
+				<div class="col-md-3 focus-grid"> 
+					<a href="products4.html" class="wthree-btn wthree5"> 
+						<div class="focus-image"><i class="fa fa-futbol-o"></i></div>
+						<h4 class="clrchg">Sports</h4> 
+					</a>
+				</div> 
+				<div class="col-md-3 focus-grid"> 
+					<a href="products2.html" class="wthree-btn wthree3"> 
+						<div class="focus-image"><i class="fa fa-gamepad"></i></div>
+						<h4 class="clrchg">Games & Toys</h4> 
+					</a>
+				</div> 
+				<div class="col-md-3 focus-grid"> 
+					<a href="products6.html" class="wthree-btn "> 
+						<div class="focus-image"><i class="fa fa-gift"></i></div>
+						<h4 class="clrchg">Gifts</h4> 
+					</a>
+				</div> 
+				<div class="clearfix"> </div>
+			</div>  	
+		</div>  	
+	</div> 
+	-->
+	<!-- //deals --> 
+	<!-- footer-top -->
+	
+		<div class="w3agile-ftr-top">
+				<div class="container">
+					<div class="ftr-toprow">
+						<div class="col-md-4 ftr-top-grids">
+							<div class="ftr-top-left">
+								<i class="fa fa-truck" aria-hidden="true"></i>
+							</div> 
+							<div class="ftr-top-right">
+								<h4>全国包邮</h4>
+								<p>我们提供免费的快递服务</p>
+							</div> 
+							<div class="clearfix"> </div>
+						</div> 
+						<div class="col-md-4 ftr-top-grids">
+							<div class="ftr-top-left">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</div> 
+							<div class="ftr-top-right">
+								<h4>顾客至上</h4>
+								<p>我们提供一流的售后服务</p>
+							</div> 
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 ftr-top-grids">
+							<div class="ftr-top-left">
+								<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+							</div> 
+							<div class="ftr-top-right">
+								<h4>质量第一</h4>
+								<p>我们提供正宗的非遗文创产品 </p>
+							</div>
+							<div class="clearfix"> </div>
+						</div> 
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+	<!-- //footer-top --> 
+	<!-- subscribe -->
+	<div class="subscribe"> 
+		<div class="container">
+			<div class="col-md-6 social-icons w3-agile-icons">
+				<h4>保持联系</h4>  
+				<ul>
+					<li><a href="#" class="fa fa-qq icon facebook"> </a></li>
+					<li><a href="#" class="fa fa-weixin icon twitter"> </a></li>
+					<li><a href="#" class="fa fa-github icon googleplus"> </a></li>
+					  
+					    
+				</ul> 
+				<ul class="apps"> 
+					<li><h4>下载我们的应用 : </h4> </li>
+					<li><a href="#" class="fa fa-apple"></a></li>
+					<li><a href="#" class="fa fa-windows"></a></li>
+					<li><a href="#" class="fa fa-android"></a></li>
+				</ul> 
+			</div> 
+			<div class="col-md-6 subscribe-right">
+				<h4>及时获取推送信息！</h4>  
+				<form action="#" method="post"> 
+					<input type="text" name="email" placeholder="输入你的邮箱" required="">
+					<input type="submit" value="订阅">
+				</form>
+				<div class="clearfix"> </div> 
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //subscribe --> 
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-info w3-agileits-info">
+				<div class="col-md-4 address-left agileinfo">
+					<div class="footer-logo header-logo">
+						<h2><a href="index.html" style="font-family: 隶书; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent; "><span style="font-family: 隶书; -webkit-text-stroke: 2px #ffffff; background-image:-webkit-linear-gradient(bottom,#c5c5c5,#87add5,#5A738F);  -webkit-background-clip:text; -webkit-text-fill-color:transparent;">非遗</span>商城</a></h2>
+						  <h6></h6>
+					</div>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>湖南省衡阳市蒸湘区红湘街道南华大学</li>
+						<li><i class="fa fa-mobile"></i> 333 222 3333 </li>
+						<li><i class="fa fa-phone"></i> +86 11 4444 </li>
+						<li><i class="fa fa-envelope-o"></i> <a href="mailto:example@mail.com"> mail@example.com</a></li>
+					</ul> 
+				</div>
+				<div class="col-md-8 address-right">
+					<div class="col-md-4 footer-grids">
+						<h3>公司</h3>
+						<ul>
+							<li><a href="about.html">关于我们</a></li>
+							<li><a href="marketplace.html">市场</a></li>  
+							<li><a href="values.html">核心价值观</a></li>  
+							<li><a href="privacy.html">隐私政策</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>服务</h3>
+						<ul>
+							<li><a href="contact.html">联系我们</a></li>
+							<li><a href="login.html">退回</a></li> 
+							<li><a href="help.html">常见问题</a></li>
+							<li><a href="sitemap.html">网站地图</a></li>
+							<li><a href="login.html">订单状态</a></li>
+						</ul> 
+					</div>
+					<div class="col-md-4 footer-grids">
+						<h3>支付方式</h3>
+						<ul>
+							<li><i class="fa fa-laptop" aria-hidden="true"></i><a href="login.html">微信支付</a></li>
+							<li><i class="fa fa-money" aria-hidden="true"></i> <a href="login.html">支付宝支付</a></li>
+						</ul>  
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->		
+	<div class="copy-right"> 
+		<div class="container">
+			<p>&copy; 2020.守艺人文化公司所有.<a target="_blank" href="#"></a></p>
+		</div>
+	</div> 
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 0);
+        			items[i].set('shipping2', 0);
+        		}
+        	}
+        });
+    </script>  
+	<!-- //cart-js -->	
+	<!-- countdown.js -->	
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/jquery.throttle.js"></script>
+	<script src="js/jquery.classycountdown.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#countdown1').ClassyCountdown({
+					end: '1388268325',
+					now: '1387999995',
+					labels: true,
+					style: {
+						element: "",
+						textResponsive: .5,
+						days: {
+							gauge: {
+								thickness: .10,
+								bgColor: "rgba(0,0,0,0)",
+								fgColor: "#1abc9c",
+								lineCap: 'round'
+							},
+							textCSS: 'font-weight:300; color:#fff;'
+						},
+						hours: {
+							gauge: {
+								thickness: .10,
+								bgColor: "rgba(0,0,0,0)",
+								fgColor: "#05BEF6",
+								lineCap: 'round'
+							},
+							textCSS: ' font-weight:300; color:#fff;'
+						},
+						minutes: {
+							gauge: {
+								thickness: .10,
+								bgColor: "rgba(0,0,0,0)",
+								fgColor: "#8e44ad",
+								lineCap: 'round'
+							},
+							textCSS: ' font-weight:300; color:#fff;'
+						},
+						seconds: {
+							gauge: {
+								thickness: .10,
+								bgColor: "rgba(0,0,0,0)",
+								fgColor: "#f39c12",
+								lineCap: 'round'
+							},
+							textCSS: ' font-weight:300; color:#fff;'
+						}
+
+					},
+					onEndCallback: function() {
+						console.log("Time out!");
+					}
+				});
+			});
+		</script>
+	<!-- //countdown.js -->
+	<!-- menu js aim -->
+	<script src="js/jquery.menu-aim.js"> </script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<!-- //menu js aim --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster --> 
+</body>
+</html>
