@@ -20,7 +20,7 @@ body{
 	float: left;
 	width: 100%;
 	font-size: 35px;
-	font-family: 隶书;
+	font-family: 微软雅黑;
 	-webkit-text-stroke: 1px #5A738F;
 	background-image:-webkit-linear-gradient(bottom,#ffffff,#5A738F); 
 	-webkit-background-clip:text; 
